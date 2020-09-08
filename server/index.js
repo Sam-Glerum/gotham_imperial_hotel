@@ -4,7 +4,7 @@ var subscriptions = require("./subscriptions.js");
 var events = require("./events.js");
 var app = express();
 
-var port = process.env.PORT || 8443;
+var PORT = process.env.PORT || 8443;
 var bodyParser = require("body-parser");
 
 app.use(bodyParser.json());
@@ -51,6 +51,6 @@ app.post("/add-subscription", function(req, res) {
 });
 
 // Start the server
-app.listen(port, function() {
+app.listen(PORT, function() {
   console.log(`Listening on port ` + port);
 });
