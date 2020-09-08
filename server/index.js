@@ -3,7 +3,8 @@ var reservations = require("./reservations.js");
 var subscriptions = require("./subscriptions.js");
 var events = require("./events.js");
 var app = express();
-var port = 8443;
+
+var port = process.env.PORT || 8443;
 var bodyParser = require("body-parser");
 
 app.use(bodyParser.json());
