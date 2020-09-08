@@ -52,5 +52,5 @@ app.post("/add-subscription", function(req, res) {
 
 // Start the server
 app.listen(PORT, function() {
-  console.log(`Listening on port ` + port);
+  console.log(`Listening on port ` + PORT);
 });
